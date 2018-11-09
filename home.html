@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Hahu Airlines | Home</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="jquery.min.js"></script>
+<script src="maxcdn.bootstrapcdn.com\bootstrap\3.3.5\js\bootstrap.min.js"></script>
+<link rel="stylesheet" href="maxcdn.bootstrapcdn.com\bootstrap\3.3.5\css\bootstrap.min.css" />
+  <link rel = "stylesheet" href="css/home.css">
+  <script src = "js/home.js"></script>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60"  class="shortPage">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+<a href="home.html">
+  <img src="logo.png" alt="LOGO" height="60" width="220" />
+</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="viewFlights.php">FLIGHTS</a></li>
+        <li><a href="viewReservations.php">RESERVATIONS</a></li>
+        <li><a href="#login">ULOG IN</a></li>
+        <li><a href="AdminLogin.html">ALOG IN</a></li>
+        <li><a href="signUp.html">SIGN UP</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+<form action="viewFlights.php">
+<div class="container">
+   
+
+<h1>Hahu Airlines
+  <br>
+  <strong>ሀሁ አየር መንገድ</strong>
+</h1>
+  <p>Where would you like to fly??<br>
+    ወደየት በረራ ማድረግ ይፈልግሉ？？？
+  </p>
+  
+    <label class="radio-inline">
+      <input type="radio" name="optradio" value="roundtrip">Round Trip <br> ደርሶ መልስ
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio" value="oneway">One way <br> አንድ መስመር
+    </label>
+  
+</div>
+  <br>
+<div class="form-inline" >
+  <select name="Guests" class="form-control"  placeholder="Guests" required>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+
+ </select>
+
+	  
+	  
+   <select name="From" class="form-control" placeholder="From" required>
+    <option value="Dallas">Dallas</option>
+    <option value="New York">New York</option>
+	<option value="Chicago">Chicago</option>
+	<option value="Los Angeles">Los Angeles</option>
+
+	
+  </select>
+   <select name="To" class="form-control"  placeholder="To" required>
+    <option value="Chicago">Chicago</option>
+	<option value="Los Angeles">Los Angeles</option>
+	<option value="New York">New York</option>
+    <option value="Dallas">Dallas</option>
+
+  </select>
+  
+  <button type="submit" class="btn btn-danger">Search Flights</button>
+</div>
+</form>
+</div>
+<form action = "login.php" method = "post">
+<div id="login" class="container-fluid" >
+  <div class="row" >
+        <div class="col-sm-2  form-group">
+			<div class="row">
+			  <h2 class="text-center">Login</h2>
+			</div>
+			<div class="row">
+			  <input class="form-control" id="username" name="username" placeholder="username" type="text" required>
+			</div></br>
+            <div class="row">
+			  <input class="form-control" id="password" name="password" placeholder="password" type="password" required>
+			</div>
+        </div>
+    <div class="col-sm-8 text-center" style="padding-left:60px">
+<h4>
+  <strong> OUR MISSION </strong>
+  <ul>
+           To sell the cheapest airline tickets in an increasingly competitive market<br>
+					To assemble the most advanced team of travel experts in the world<br>
+					To maintain an efficient and technologically bullet-proof platform<br>
+          Innovate, don't imitate.<br>
+        </ul></h4>
+		</div>
+		
+      </div>
+      <div class="row">
+        <div class="col-sm-2 form-group">
+          <button class="btn btn-default pull-right" type="submit">Log In</button>
+        </div>
+      </div>
+    </div>
+</form>
+
+<footer class="container-fluid text-center">
+  <p>&copy; Hahu Airlines. All Rights Reserved </p>
+</footer>
+</div>
+</body>
+</html>
+
